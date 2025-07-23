@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel="stylesheet" href="style.css">
+<script defer src="script.js"></script>
+  <title>Frontend Mentor | Time tracking dashboard</title>
+</head>
+<body>
+    <main>
+      <section>
+          <div class="maincontainer">
+
+            <div class="leftpanel">
+              
+                <div class="profile">
+                    <img class="profile_image" src="images/image-jeremy.png" alt="image-jeremy">
+                    <p class="profile_title">Report for</p>
+                    <h1 class="profile_name">Jeremy Robson</h1>
+                </div>
+                <div class="leftpanel_categories">
+                  <button class="categories_daily">Daily</button>
+                  <button class="categories_weekly">Weekly</button>
+                  <button class="categories_weekly">Monthly</button>
+                </div>
+            </div>
+      </section>
+
+      <section>
+            <div class="dashboard_grid">
+
+          <article>
+              <div class="dashboard_grid_firstboard"></div>
+                  <div class="firstboard_orangesheader">
+                    <img src="images/icon-work.svg" alt="icon-work">
+                  </div>
+
+                  <div class="firstboard_datapanel">
+                    <p class="firstboard_datapanel_header">Work</p>
+                    <img class="firstboard_datapanel_dots" src="images/icon-ellipsis.svg" alt="three_dots">
+                    <p class="firstboard_datapanel_data"> <span id="data_1"></span>Hrs</p>
+                    <p class="firstboard_datapanel_past">Last week- <span id="data_past1"></span>Hrs</p>
+                  </div>
+
+          </article>
+
+          <article>
+              <div class="dashboard_grid_second"></div>
+                <div class="secondboard_blueheader">
+                    <img src="images/icon-play.svg" alt="icon-play">
+                </div>
+
+              <div class="secondboard_datapanel">
+                    <p class="secondboard_datapanel_header">Play</p>
+                    <img class="secondboard_datapanel_dots" src="images/icon-ellipsis.svg" alt="three_dots">
+                    <p class="secondboard_datapanel_data"> <span id="data_2"></span>Hrs</p>
+                    <p class="secondboard_datapanel_past">Last week- <span id="data_past2"></span>Hrs</p>
+              </div>
+
+          </article>
+
+          <article>
+              <div class="dashboard_grid_third"></div>
+                 <div class="thirdboard_pinkheader">
+                    <img src="images/icon-study.svg" alt="icon-study">
+              </div>
+
+              <div class="thirdboard_datapanel">
+                    <p class="thirdboard_datapanel_header">Study</p>
+                    <img class="thirdboard_datapanel_dots" src="images/icon-ellipsis.svg" alt="three_dots">
+                    <p class="thirdboard_datapanel_data"> <span id="data_3"></span>Hrs</p>
+                    <p class="thirdboard_datapanel_past">Last week- <span id="data_past3"></span>Hrs</p>
+                  </div>
+          </article>
+
+          <article>
+              <div class="dashboard_grid_forth"></div>
+                 <div class="forthdboard_greenheader">
+                    <img src="images/icon-exercise.svg" alt="icon-exercise">
+              </div>
+
+              <div class="forthboard_datapanel">
+                    <p class="forthboard_datapanel_header">Exercise</p>
+                    <img class="forthboard_datapanel_dots" src="images/icon-ellipsis.svg" alt="three_dots">
+                    <p class="forthboard_datapanel_data"> <span id="data_4"></span>Hrs</p>
+                    <p class="fothboard_datapanel_past">Last week- <span id="data_past4"></span>Hrs</p>
+                  </div>
+          </article>
+
+
+          <article>
+              <div class="dashboard_grid_fifth"></div>
+                  <div class="fifthdboard_purpleheader">
+                    <img src="images/icon-social.svg" alt="icon-social">
+                  </div>
+              
+              <div class="fifthboard_datapanel">
+                    <p class="fifthboard_datapanel_header">Social</p>
+                    <img class="fifthboard_datapanel_dots" src="images/icon-ellipsis.svg" alt="three_dots">
+                    <p class="fifthboard_datapanel_data"> <span id="data_5"></span>Hrs</p>
+                    <p class="fifthboard_datapanel_past">Last week- <span id="data_past5"></span>Hrs</p>
+              </div>
+
+          </article>
+
+
+          <article>
+              <div class="dashboard_grid_sixth"></div>
+                <div class="sixthdboard_yellowheader">
+                    <img src="images/icon-self-care.svg" alt="icon-self-care">
+              </div>
+
+              <div class="sixthboard_datapanel">
+                    <p class="sixthboard_datapanel_header">Self-care</p>
+                    <img class="sixthboard_datapanel_dots" src="images/icon-ellipsis.svg" alt="three_dots">
+                    <p class="sixthboard_datapanel_data"> <span id="data_6"></span>Hrs</p>
+                    <p class="sixthboard_datapanel_past">Last week- <span id="data_past6"></span>Hrs</p>
+              </div>
+
+          </article>
+
+            </div>
+      </section>
+
+    </div>
+
+    </main>
+
+</body>
+</html>
