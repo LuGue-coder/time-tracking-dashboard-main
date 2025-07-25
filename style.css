@@ -187,7 +187,7 @@ button{
     border-radius: 1rem 1rem 2rem 2rem;
     display:flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
 }
 .data{
     font-size: 3rem;
@@ -213,9 +213,120 @@ button{
 }
 
 
+/*mobile*/
 
+@media (max-width:375px) {
+ .maincontainer{
+    display:flex;
+    flex-direction: column;
+    height: fit-content;
+    width:375px;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 
+}
+.dashboard_grid{
+    display:flex;
+    flex-direction: column;
+}
+.profile{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    height: 10rem;
+    padding: 0%;
+}
+ .profile_image{
+     width:25%; 
+     position: relative;  
+     left: 1rem; 
+}
 
+.profile_name{
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 1.5rem;
+    position: relative;
+    top:1rem;
+    text-wrap: nowrap;
+    right: 2rem;
+    
+}
+.profile_title{
+    padding-top:2rem;
+    color:var(--Navy-200);
+    font-size: 1rem;
+    margin-bottom:0;
+    position: relative;
+    bottom: 2rem;
+    left:2.5rem;
+    text-wrap: nowrap;
+    margin-top: 0%;
+    
+}
+.leftpanel_categories{
+        display:flex;
+        flex-direction: row;
+        margin:auto;
+        gap:0;
+        margin-bottom: 0.5rem;
+}
+
+.leftpanel{
+    display:flex;
+    flex-direction: row;
+    background-color: var(--Navy-900);
+    padding-bottom:0;
+    height:13rem;
+    width: 20rem;
+ }
+button{
+    background-color:var(--Navy-900);
+    width:5rem;
+    margin-top:0.5rem;
+    border:none;
+    color:var(--Navy-200);
+    text-align: center;
+}
+.item{
+    height: 12rem;
+    border-radius: 1rem 1rem 2rem 2rem;
+}
+.datapanel{
+    background-color: var(--Navy-900);
+    color: whitesmoke;
+    width:20rem;
+    height:10rem;
+    border-radius: 1rem;
+    padding:2rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url("images/icon-ellipsis.svg");
+    background-repeat: no-repeat;
+    background-position-x:90%;
+    background-position-y:16%;
+} 
+.data{
+    font-size: 2rem;
+    font-weight:100;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.pastdata{
+    color:var(--Navy-200);
+    font-size: 1rem;
+    position: relative;
+    left:8rem;
+    bottom:2.5rem
+}
+.header{
+    float:left;
+    font-weight: 400;
+    font-size: 1.1rem;
+}
+}
 
 
     
