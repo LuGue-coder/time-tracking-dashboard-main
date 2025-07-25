@@ -43,15 +43,15 @@ body{
 }
 
 .leftpanel{
-    width:100%;
     display:flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     background-color: var(--Navy-900);
     padding-bottom:1rem;
     border-radius: 1rem;
-    height: 37rem;
+    height: 36rem;
+    width:16rem;
 }
 
 .profile{
@@ -72,20 +72,23 @@ body{
 
 .profile_name{
     color: whitesmoke;
-    font-weight: 300;
-    font-size: 2rem;
+    font-weight: 100;
+    font-size: 3rem;
     
 }
 .profile_title{
     padding-top:2rem;
-    color: hsl(31, 2%, 79%);
-
+    color:var(--Navy-200);
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
 }
 
 .leftpanel_categories{
     display:flex;
     flex-direction: column;
-    margin:1rem 1rem 1rem 0rem;
+    margin:1rem;
+    margin-top: 2rem;
+    color:var(--Navy-200);
 }
 
 .dashboard_grid{
@@ -108,8 +111,10 @@ body{
     background-position-x:90%;
     background-position-y:16%;
 } 
-.dots{
-    float:right;
+
+.datapanel:hover{
+    background-color: hsl(235, 40%, 25%);
+    cursor: pointer;
 }
 
 .stripe{
@@ -179,7 +184,7 @@ button{
 }
 .item{
     height: 17rem;
-    border-radius: 1rem;
+    border-radius: 1rem 1rem 2rem 2rem;
     display:flex;
     flex-direction: column;
     justify-content: end;
@@ -190,7 +195,22 @@ button{
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+.categories-btn{
+    margin: 0.5rem;
+    font-size: 1.05rem;
+}
 
+.categories-btn:hover{
+    cursor: pointer;
+    color:whitesmoke;
+}
+.pastdata{
+    color:var(--Navy-200);
+    font-size: 1rem;
+}
+.active{
+    color:whitesmoke;
+}
 
 
 
