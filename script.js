@@ -1,4 +1,4 @@
-local_data = {};
+ let local_data;
 
 function update_data_daily(data) {
   for (i = 0; i < data.length; i++) {
