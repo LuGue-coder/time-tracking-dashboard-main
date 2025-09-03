@@ -1,4 +1,4 @@
- let local_data;
+let local_data;
 
 function update_data_daily(data) {
   for (i = 0; i < data.length; i++) {
@@ -22,8 +22,6 @@ function update_data_weekly(data) {
   document.getElementById("btn_daily").classList.remove("active");
   document.getElementById("btn_monthly").classList.remove("active");
 }
-
-
 function update_data_monthly(data) {
   for (i = 0; i < data.length; i++) {
     label_id = "data_" + data[i].title;
@@ -36,11 +34,11 @@ function update_data_monthly(data) {
   document.getElementById("btn_daily").classList.remove("active");
 }
 
-fetch('/data.json').then((response) => {  
-  if(!response.ok) return console.log('Oops! Something went wrong.');
-  
+fetch('data.json').then((response) => {  
+  if(!response.ok) return console.log("Oops. There was a problem there.");
   return response.json();
 }).then((data) => {
+  console.log(data);
   local_data = data;
   update_data_daily(local_data);
 });
