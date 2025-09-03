@@ -35,7 +35,10 @@ function update_data_monthly(data) {
 }
 
 fetch('data.json').then((response) => {  
-  if(!response.ok) return console.log("Oops. There was a problem there.");
+
+  if(!response.ok) return console.log('Oops! Something went wrong.');
+  
+>>>>>>> 17056744a73677daeee6961ef653b6fcd32679a4
   return response.json();
 }).then((data) => {
   console.log(data);
